@@ -1,0 +1,9 @@
+name = "my-site-name"
+account_id="6d887313fd54f99205c556767e08e998"
+type = "webpack"
+route = ''
+zone_id = ''
+usage_model = ''
+compatibility_flags = []
+workers_dev = true
+site = {bucket = "./build", entry-point = "workers-site"}
