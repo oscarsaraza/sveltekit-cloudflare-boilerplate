@@ -3,9 +3,13 @@
 - ✅ sveltekit/cloudflare workers setup
 - ✅ UI library setup
   - https://carbon-svelte.vercel.app
-- ⬜️ form handling
-  - https://svelte-forms-lib-sapper-docs.vercel.app/introduction
+- ✅ form handling
   - https://www.npmjs.com/package/felte
-- ⬜️ state managment
-- ⬜️ api/database layer
+- ✅ state managment/api
+  - svelte stores
+- ⬜️ database
 - ⬜️ auth
+- ⬜️ testing
+
+## Review
+- https://sveltequery.vercel.app/overview

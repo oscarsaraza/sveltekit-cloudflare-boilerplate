@@ -11,7 +11,8 @@ const config = {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 		adapter: adapter(),
-		vite: { plugins: [process.env.NODE_ENV === 'production' && optimizeCss()] }
+		// TODO: optimizeCss exclude date range picker styles
+		// vite: { plugins: [process.env.NODE_ENV === 'production' && optimizeCss()] }
 	}
 };
 

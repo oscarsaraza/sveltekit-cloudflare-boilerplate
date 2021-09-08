@@ -1,16 +1,17 @@
 <script>
-	import { Button, DatePicker, DatePickerInput } from 'carbon-components-svelte';
-	let text = 'Testing js';
+	import { Grid, Row, Column, Tile } from 'carbon-components-svelte';
+	import TestForm from '$lib/components/test-form.svelte';
 </script>
 
-<h1>Start page 2</h1>
-
-<DatePicker datePickerType="range" on:change dateFormat="d/m/yy">
-	<DatePickerInput placeholder="Inicio" />
-	<DatePickerInput placeholder="Fin" />
-</DatePicker>
-
-<Button>Test</Button>
+<Grid>
+	<Row>
+		<Column>
+			<Tile>
+				<TestForm />
+			</Tile>
+		</Column>
+	</Row>
+</Grid>
 
 <style>
 	@import 'carbon-components-svelte/css/g10.css';
