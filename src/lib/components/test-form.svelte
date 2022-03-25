@@ -23,15 +23,15 @@
 			radioOption: null,
 			selectOption: '',
 			username: '',
-			from: '24/08/2121',
-			to: '08/11/2121'
+			from: '2021-08-24',
+			to: '2021-11-09'
 		},
 		onSubmit(values) {
 			console.log('Default onSubmit', values);
 		},
 		validate(values) {
 			const errors = {};
-			if (!values.username) errors.username = 'Username required';
+			if (values.username && values.username.length < 5) errors.username = 'Username too short';
 			return errors;
 		},
 		onError(error) {
@@ -80,13 +80,14 @@
 	</FormGroup>
 	<DatePicker
 		datePickerType="range"
-		dateFormat="d/m/yy"
+		dateFormat="Y-m-d"
 		bind:valueFrom={$data.from}
 		bind:valueTo={$data.to}
 	>
 		<DatePickerInput labelText="From" />
 		<DatePickerInput labelText="To" />
 	</DatePicker>
+	<hr />
 	<br />
 	<Button type="submit" disabled={$isSubmitting}>Submit</Button>
 </Form>
